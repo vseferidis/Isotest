@@ -1,8 +1,9 @@
 body {
     background-color: darkslategrey;
 }
+
 .calc-wrapper {
-    display:flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     background-color: white;
@@ -10,10 +11,9 @@ body {
     align-items: center;
     width: 500px;
     margin: 0 auto;
-
     & .calc-display {
         background-color: black;
-        color: white;;
+        color: white;
         font-size: 2em;
         font-family: monospace;
         padding: 1em;
@@ -22,30 +22,38 @@ body {
         text-align: right;
         justify-content: flex-end;
         align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
-
+    & .calc-history {
+        color: white;
+        font-size: .5em;
+        font-family: monospace;
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-end;
+    }
     & .calc-keys {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         width: 100%;
-
         & button {
-            border:none;
+            border: none;
             border: 1px solid rgba($color: #000000, $alpha: 0.1);
             background-color: white;
             font-size: em;
             font-family: monospace;
-            padding:1em;
+            padding: 1em;
             transition: 233ms ease-in-out all;
-
             &:hover {
                 background-color: rgba($color: #000000, $alpha: 0.3);
             }
-            &:focus, &:active {
+            &:focus,
+            &:active {
                 background-color: tomato;
             }
-
             &.equals {
                 grid-row: 2 / span 4;
                 grid-column: 4 / span 1;
@@ -54,8 +62,12 @@ body {
         }
         & .operator {
             background-color: rgba($color: #000000, $alpha: 0.2);
-
         }
-
     }
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

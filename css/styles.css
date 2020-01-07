@@ -1,5 +1,6 @@
 body {
-  background-color: darkslategrey; }
+  background-color: darkslategrey;
+}
 
 .calc-wrapper {
   display: -webkit-box;
@@ -7,65 +8,114 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+      flex-wrap: nowrap;
   background-color: white;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 500px;
-  margin: 0 auto; }
-  .calc-wrapper .calc-display {
-    background-color: black;
-    color: white;
-    font-size: 2em;
-    font-family: monospace;
-    padding: 1em;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: right;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  .calc-wrapper .calc-keys {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    width: 100%; }
-    .calc-wrapper .calc-keys button {
-      border: none;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      background-color: white;
-      font-size: em;
-      font-family: monospace;
-      padding: 1em;
-      -webkit-transition: 233ms ease-in-out all;
-      -o-transition: 233ms ease-in-out all;
-      transition: 233ms ease-in-out all; }
-      .calc-wrapper .calc-keys button:hover {
-        background-color: rgba(0, 0, 0, 0.3); }
-      .calc-wrapper .calc-keys button:focus, .calc-wrapper .calc-keys button:active {
-        background-color: tomato; }
-      .calc-wrapper .calc-keys button.equals {
-        -ms-grid-row: 2;
-        -ms-grid-row-span: 4;
-        grid-row: 2 / span 4;
-        -ms-grid-column: 4;
-        -ms-grid-column-span: 1;
-        grid-column: 4 / span 1;
-        background-color: tomato; }
-    .calc-wrapper .calc-keys .operator {
-      background-color: rgba(0, 0, 0, 0.2); }
+  margin: 0 auto;
+}
+
+.calc-wrapper .calc-display {
+  background-color: black;
+  color: white;
+  font-size: 2em;
+  font-family: monospace;
+  padding: 1em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.calc-wrapper .calc-history {
+  color: white;
+  font-size: .5em;
+  font-family: monospace;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.calc-wrapper .calc-keys {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.calc-wrapper .calc-keys button {
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+  font-size: em;
+  font-family: monospace;
+  padding: 1em;
+  -webkit-transition: 233ms ease-in-out all;
+  transition: 233ms ease-in-out all;
+}
+
+.calc-wrapper .calc-keys button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.calc-wrapper .calc-keys button:focus, .calc-wrapper .calc-keys button:active {
+  background-color: tomato;
+}
+
+.calc-wrapper .calc-keys button.equals {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  grid-row: 2 / span 4;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4 / span 1;
+  background-color: tomato;
+}
+
+.calc-wrapper .calc-keys .operator {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=styles.css.map */
