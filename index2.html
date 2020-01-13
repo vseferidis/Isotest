@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        tr {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        
+        td {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            width: 3ch;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="message">
+
+    </ul>
+</body>
+
+<script>
+    let message = document.getElementById('message');
+
+    for (i = 0; i < 100; i++) {
+        if (i % 3 == 0) {
+            message.innerHTML = "fizz" + i + < br > ;
+        } else {
+
+        }
+        message.innerHTML = message.innerHTML + i + "<br>";
+    }
+</script>
+
+</html>
